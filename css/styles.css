@@ -81,49 +81,59 @@ header .container {
     display: flex;
 }
 
-.main-nav {
-    display: flex;    
+.site-nav {
+    display: flex;
 }
 
-.main-nav .item {
+
+.site-nav__item {
     margin-right: 50px;
 }
 
-.main-nav .item:last-child {
+
+.site-nav__item:last-child {
     margin-right: 0;
 }
 
-.main-nav .link {
+
+
+.site-nav__link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    
+        color: var(--main-nav-link-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
 
-    color: var(--main-nav-link-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        text-decoration: none;
+    
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main-nav .link:hover, 
-.main-nav .link:focus {
+
+
+.site-nav__link:hover,
+.site-nav__link:focus {
     color: var(--span-color);
 }
 
-.main-nav .link.current {
+
+
+.site-nav__link.current {
     color: var(--span-color);
 
     position: relative;
 }
 
-
 /* Підкреслення*/
 
-.main-nav .link.current::after {
+
+.site-nav__link.current::after {
     content: '';
 
     position: absolute;
@@ -566,9 +576,7 @@ header {
     fill:  #2196F3;
 }
 
-/* .customers-link {
-    fill: currentColor;
-} */
+
 
 
 
