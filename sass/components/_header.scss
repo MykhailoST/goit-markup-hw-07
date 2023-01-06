@@ -75,8 +75,6 @@ header .container {
 }
 
 
-/* header > ul */
-
 header {
     border-bottom: 1px solid #ECECEC;
 }
@@ -96,12 +94,43 @@ header {
 
 }
 
+// .nav {
+//     display: flex;
+//     margin-left: auto;
+
+//     & .item {
+//         display: flex;
+//         margin-right: 50px;
+//         margin-top: 32px;
+//         margin-bottom: 32px;
+//     }
+
+//     & .item:last-child {
+//         margin-right: 0;
+//     }
+
+// }
+
+.site-contacts {
+    display: flex;
+    margin-left: auto;
+
+    & .site-contacts__item {
+        display: flex;
+        margin-right: 50px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    & .site-contacts__item:last-child {
+        margin-right: 0;
+    }
+
+}
 
 
 
-
-
-.mail {
+.site-contacts__mail {
     display: flex;
     align-items: center;
 
@@ -121,7 +150,7 @@ header {
         }
 }
 
-.tel {
+.site-contacts__tel {
     display: flex;
     align-items: center;
 

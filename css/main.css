@@ -99,7 +99,6 @@ header .container {
   border-radius: 2px;
 }
 
-/* header > ul */
 header {
   border-bottom: 1px solid #ECECEC;
 }
@@ -118,7 +117,21 @@ header {
   margin-right: 0;
 }
 
-.mail {
+.site-contacts {
+  display: flex;
+  margin-left: auto;
+}
+.site-contacts .site-contacts__item {
+  display: flex;
+  margin-right: 50px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.site-contacts .site-contacts__item:last-child {
+  margin-right: 0;
+}
+
+.site-contacts__mail {
   display: flex;
   align-items: center;
   color: var(--body-color);
@@ -130,11 +143,11 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mail:hover, .mail:focus {
+.site-contacts__mail:hover, .site-contacts__mail:focus {
   color: var(--span-color);
 }
 
-.tel {
+.site-contacts__tel {
   display: flex;
   align-items: center;
   color: var(--body-color);
@@ -146,7 +159,7 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.tel:hover, .tel:focus {
+.site-contacts__tel:hover, .site-contacts__tel:focus {
   color: var(--span-color);
 }
 
@@ -638,17 +651,17 @@ address .link {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-but {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.list-but .filter + .filter {
+.filter .filter__list + .filter__list {
   margin-left: 8px;
 }
 
-.but {
+.filter__but {
   display: flex;
   border-radius: 4px;
   padding: 6px 22px;
@@ -664,7 +677,7 @@ address .link {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.but:hover, .but:focus {
+.filter__but:hover, .filter__but:focus {
   color: #FFFFFF;
   background: #2196F3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
